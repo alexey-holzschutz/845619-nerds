@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+
+    <!-- Header -->
+<header>
+    <a class="header-logo" href="index.html"><img src="img/logo.jpg" alt="Nёrds"</a>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Студия</a></li>
+        <li><a href="#references">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <a class="icon-basket" href="#">Корзина</a>
+</header>
+
+<!-- Content -->
+
+  <main>
+        <section class="welcome-block">
+          <h1 class="shop-title">Магазин готовых шаблонов</h1>
+
+        </section>
+
+        <section class="sidebar">
+                  <p class="filter-title">Стоимость:</p>
+
+                    <div class="range-control">
+                      <div class="scale"><div class="bar"></div></div>
+                    </div>
+                    <div class="price-control">
+                      от <input class="min-price" value="0" type="text">
+                      до <input class="max-price" value="15 000" type="text">
+                    </div>
+
+                <form action="#" id="filter-form">
+                    <p class="filter-title">Сетка:</p>
+                    <p><input id="grid-1" name="radio-grid" checked="checked" type="radio"><label class="icon-circle-dot" for="grid-1">Адаптивная</label></p>
+                    <p><input id="grid-2" name="radio-grid" type="radio"><label class="icon-circle" for="grid-2">Фиксированная</label></p>
+                    <p><input id="grid-3" name="radio-grid" type="radio"><label class="icon-circle" for="grid-3">Резиновая</label></p>
+                    <p class="filter-title">Особенности:</p>
+                    <p><input id="checkbox1" name="checkbox-1" checked="checked" type="checkbox"><label class="icon-check-on" for="checkbox1">Слайдер</label></p>
+                    <p><input id="checkbox2" name="checkbox-2" type="checkbox"><label class="icon-check-off" for="checkbox2">Блок преимуществ</label></p>
+                    <p><input id="checkbox3" name="checkbox-3" checked="checked" type="checkbox"><label class="icon-check-on" for="checkbox3">Новости</label></p>
+                    <p><input id="checkbox4" name="checkbox-4" type="checkbox"><label class="icon-check-off" for="checkbox4">Галерея</label></p>
+                    <p><input id="checkbox5" name="checkbox-5" type="checkbox"><label class="icon-check-off" for="checkbox5">Корзина</label></p>
+                  </div>
+                </form>
+        </section>
+
+              <p class="sorting-title">Сортировать:</p>
+              <ul class="sorting-list">
+                    <li><a href="#" class="sorting-text">По цене</a></li>
+                    <li><a href="#" class="sorting-text">По типу</a></li>
+                    <li><a href="#" class="sorting-text">По функционалу</a></li>
+              </ul>
+
+<!-- Item cards -->
+            <img src="img/item1.jpg" alt="Sunset" width="240" height="240">
+              <p> class="item-title">Sedona</p>
+              <p> class="item-text">Информационный сайт для туристов</p>
+              <a href="#" class="btn item-price">9 900 р.</a>
+              <p></p>
+            <img src="img/item2.jpg" alt="Pink" width="240" height="400">
+            <img src="img/item3.jpg" alt="Borodinski" width="240" height="400">
+            <img src="img/item4.jpg" alt="Mishka" width="240" height="400">
+            <img src="img/item5.jpg" alt="UA+" width="240" height="400">
+            <img src="img/item6.jpg" alt="KBACT" width="240" height="400">
+
+          <p class="active">1</p>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a class="next" href="#">Следующая</a>
+  </main>
+
+  <!-- Map & contacts -->
+      <a name="contacts"></a>
+        <p class="contacts-title">Nёrds design studio</p>
+        <p class="contacts-address">191186,Санкт-Петербург,</p>
+        <p class="contacts-address">ул.Б. Конюшенная,д.19/8</p>
+        <p class="contacts-phone">тел.+7(812)275-75-75</p>
+        <a href="#" class="btn contacts-btn">Напишите нам</a>
+        <p></p>
+<!-- Footer -->
+  <footer>
+    <a class="icon-vk" href="https://vk.com/" target="_blank">Vk</a>
+    <a class="icon-facebook" href="https://www.facebook.com/" target="_blank">Fb</a>
+    <a class="icon-instagram" href="https://instagram.com/" target="_blank">Insta</a>
+
+    <p class="friendship-title">Давайте дружить, это выгодно!</p>
+    <p class="friendship-text">Скидка 10% для друзей из социальных сетей</p>
+
+  </footer>
+
+</body>
+</html>

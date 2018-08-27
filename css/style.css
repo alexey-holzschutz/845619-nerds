@@ -33,3 +33,71 @@ ul {
 label {
     display: block;
 }
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    border: 0;
+  }
+
+/* стили
+.header-logo {}
+.menu {}
+.icon-basket{}
+
+.slider{}
+.slide-title{}
+.slide-text{}
+.btn slide-btn{}
+.service-title{}
+.service-text{}
+.btn service-sites
+.btn service-presentations{}
+.info-title{}
+.info-text{}
+.list-title{}
+.list{}
+.header-logo2{}
+.reference-img{}
+.contacts-title{}
+.contacts-address{}
+.contacts-phone{}
+.btn contacts-btn{}
+
+icon-vk
+icon-faceboo
+icon-instagram
+
+friendship-title
+friendship-text
+
+
+welcome-block
+shop-title
+sidebar
+filter-title
+range-control
+scale
+bar
+price-control
+min-price
+max-price
+icon-circle-dot
+icon-circle
+icon-check-on
+icon-check-off
+sorting-title
+sorting-list
+sorting-text
+item-title
+item-text
+btn item-price
+
+active
+next
+
+*/

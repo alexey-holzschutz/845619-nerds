@@ -105,10 +105,12 @@ label {
 
 /* дальше пошли волшебные стили конкретных элементов */
   .menu,
+  .menu a,
   .list-title {
     list-style: none;  
     text-transform: uppercase;
     line-height: 20px;
+    background-color: lightgray;
   }
   .menu a:hover,
   .icon-basket:hover {
@@ -120,18 +122,50 @@ label {
       
   }
 
-
   .icon-basket{
     text-transform: uppercase;
+    background-color: lightgray;
   }
+  
   .service-title{
     text-transform: uppercase;
   }
   .btn{
     text-transform: uppercase;
   }
-  
+  .slide-title,
+  .shop-title{
+    font-size: 50px;
+  line-height: 60px; 
+  }
 
+  .slide-text{
+    font-size: 14px;
+    /*line-height: 22px; */
+  }
+
+  .btn{
+      font:inherit;
+      background-color: red;
+      color: white;
+  }
+  .letter-form input {
+      border: 2px solid lightgray;
+  }
+  
+  .letter-form input:hover {
+      border: 2px solid gray;
+  }
+  .letter-form input:focus {
+    border: 2px solid black ;
+  }
+  letter-form input:invalid{
+    border: 2px solid red ;
+  }
+
+.back-gray{
+background-color: lightgrey;    
+}
 /* пусть будет последним определяемым стилем, уж скрывать так скрывать*/
 .visually-hidden {
     position: absolute;
@@ -142,12 +176,14 @@ label {
     overflow: hidden;
     border: 0;
   }
+
+
+
 /* стили
 .header-logo {}
 
 .slider{}
-.slide-title{}
-.slide-text{}
+
 .slide-btn
 
 .service-text{}

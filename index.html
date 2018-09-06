@@ -55,7 +55,7 @@
         <a href="#" class="btn slide-btn">Узнать больше</a>
       </li>  
       <!-- Slide 2 -->
-      <li class="info-slider__item info-slider__item--proportions">
+      <li class="visually-hidden info-slider__item info-slider__item--proportions">
         <p>
           <img src="img/nerds-index-slide2.png" alt="Любим математику как никто другой">
         </p>
@@ -66,7 +66,7 @@
         <a href="#" class="btn slide-btn">Узнать больше</a>
       </li>
       <!-- Slide 3 -->
-      <li class="info-slider__item info-slider__item--night-hardcore">
+      <li class="visually-hidden info-slider__item info-slider__item--night-hardcore">
         <p>
           <img src="img/nerds-index-slide3.png" alt="Только ночь, только хардкор">
         </p>
@@ -141,16 +141,33 @@
   </div>  
     
     <!-- References block -->
-    <a name="references"></a>
-    <a href="http://htmlacademy.ru/" class="reference-img">
-      <img src="img/logo-1.svg" alt="HTML Academy">HTML Academy</a>
-    <a href="# " class="reference-img">
-      <img src="img/logo-2.png" alt="Barbershop Borodinski">Barbershop Borodinski</a>
-    <a href="# " class="reference-img">
-      <img src="img/logo-3.png" alt="PINK">PINK</a>
-    <a href="# " class="reference-img">
-      <img src="img/logo-4.png" alt="Mishka">MISHKA</a>
+  <div class="cnt reference-container">
 
+      <a name="references"></a>
+    <ul class="reference-list">  
+      <li>
+        <a href="http://htmlacademy.ru/" class="reference-img">
+         <img src="img/logo-1.png" alt="HTML Academy">
+        </a>
+      </li>
+      <li>
+        <a href="# " class="reference-img">
+          <img src="img/logo-2.png" alt="Barbershop Borodinski">
+        </a>
+      </li>
+      <li>
+        <a href="# " class="reference-img">
+          <img src="img/logo-3.png" alt="PINK">
+        </a>
+      </li>
+      <li>    
+        <a href="# " class="reference-img">
+          <img src="img/logo-4.png" alt="Mishka">
+        </a>
+      </li>
+     </ul>    
+  </div>
+  
   </main>
 
   <!-- Map & contacts -->
@@ -174,7 +191,7 @@
   </footer>
   
   <!-- form -->
-   <form class="visualy-hidden" action="https://echo.htmlacademy.ru" method="post">
+   <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="post">
     <h1 >Напишите нам</h1>  
     <div class="letter-form">
       <label for="name-field">Ваше имя:</label>

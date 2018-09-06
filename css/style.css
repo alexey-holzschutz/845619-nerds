@@ -223,27 +223,29 @@ label {
   background-image: url("../img/slide3.png");
   background-position: 400px 5px; */
 }
- .service-container{
+ 
+.service-container{
   width: 1100px;
   margin-left: 140px;
   margin-top: 80px;
   margin-bottom:80px;
   padding: 0;   
   }
+
   .service-container li{
     width: 300px;
   }    
-.service-list{
+
+  .service-list{
   display: flex;
   allign-items:center;
   justify-content: space-between;
-}
+  }
   
 .info-container{
   width: 1440px;
   /* margin: 80px 140px; */
   /* margin-bottom:80px; */
-  
 }
 
 .info-flex{
@@ -265,7 +267,28 @@ label {
   margin-left:150px;
 } 
 
+.reference-container{
+  width: 1100px;
+  margin-left: 140px;
+  margin-top: 80px;
+  margin-bottom:80px;
+  padding: 0;   
+  align-items: center;
+  }
 
+  /* .reference-container li{
+    width: 300px;
+  }     */
+
+  .reference-list{
+  display: flex;
+  justify-content:  space-around;
+  align-items: center;
+  }
+
+
+
+  
 
 /* =====================пусть будет последним определяемым стилем, уж скрывать так скрывать*/
 .visually-hidden {

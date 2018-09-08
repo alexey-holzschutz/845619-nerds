@@ -29,20 +29,20 @@
 /* определяем волшебные глобальные стили */
 
 body {
-/* min-width: 900px;*/
     margin: 0;
     padding: 0;
     background-color: white;
     color: black;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: "Roboto", "Arial", "sans-serif";
     font-weight: 500;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 24px;
+    min-width: 1200px;
+    font-kerning: none;
 }
 
 
-
- p,
+/* p,
 ul,
 h1,
 h2,
@@ -50,7 +50,7 @@ h3,
 figure {
     margin: 0;
     padding: 0;
-} 
+}  */
 
 a:focus {
     outline: none;
@@ -374,22 +374,42 @@ label {
 
 
 .footer-container{
-  margin-top:55px;
-  padding: 60px 0;
   display:flex;
+  padding-top: 66px;
+  padding-bottom: 70px;
 }
 .footer-social{
   width:260px;
   margin:0;
+  margin-top: 2px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+
   margin-left:140px;
   margin-right:140px;
 }
-.footer-friendship{
-  width:260px;
-  margin:0;
+
 }
 
+.footer-friendship{
+  width: 560px;
+  margin-top: 10px;
+  margin-left: 140px;
+}
 
+  .friendship-title{
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+  }
+
+  .friendship-text{
+    margin: 0;
+    margin-top: 6px;
+  }
 
 /* =====================пусть будет последним определяемым стилем, уж скрывать так скрывать*/
 .visually-hidden {
@@ -402,7 +422,6 @@ label {
     border: 0;
   }
 
- 
 
 /* стили  не использованные
 
@@ -429,10 +448,6 @@ icon-vk
 icon-faceboo
 icon-instagram
 
-friendship-title
-friendship-text
-
-
 welcome-block
 shop-title
 sidebar
@@ -458,7 +473,51 @@ active
 next
 
 */
+.social__link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
 
+.social__link:hover a{
+  background-color: #e74246;
+}
+
+.social__link:active a {
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 #c13135;
+}
+
+.icon-vk a {
+  background-image: url("../img/svg/vk-icon.svg");
+}
+
+.icon-vk a:active {
+  background-image: url("../img/svg/vk-icon-op.svg");
+}
+
+.icon-facebook a {
+  background-image: url("../img/svg/fb-icon.svg");
+}
+
+.icon-facebook a:active {
+  background-image: url("../img/svg/fb-icon-op.svg");
+}
+
+.icon-instagram a {
+  background-image: url("../img/svg/insta-icon.svg");
+}
+
+.icon-instagram a:active {
+  background-image: url("../img/svg/insta-icon-op.svg");
+}
 
 .header__logo {
   cursor: pointer;

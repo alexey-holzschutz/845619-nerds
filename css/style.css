@@ -171,7 +171,7 @@ label {
 
 .wrapper {
   margin: 0 auto;
-  width: 1200px;
+  width: 1160px;
   padding: 0 20px;
 }
 .main-header{
@@ -262,6 +262,134 @@ label {
   height: 65px; */
   /* background-color: lightgrey;
 } */
+.item-slider {
+  display: none;
+  padding: 78px 0 80px 0;
+  width: 1150px;
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position: 430px 7px;
+  padding-top: 68px;
+  padding-bottom: 82px;
+}
+.item-slider__title {
+  font-size: 55px;
+  line-height: 55px;
+}
+.item-slider__text {
+  margin-top: 27px;
+  margin-bottom: 38px;
+}
+
+.item-slider__link {
+  display: inline-block;
+  width: 240px;
+  min-height: 24px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.item-slider__link:hover,
+.item-slider__link:focus {
+  background-color: #e74246;
+}
+
+.item-slider__link:active {
+  background-color: #d7373b;
+}
+
+
+
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+#product-1:checked ~ .promo-slider__list .item-slider:nth-child(1) {
+  display: block;
+}
+
+#product-2:checked ~ .promo-slider__list .item-slider:nth-child(2) {
+  display: block;
+}
+
+#product-3:checked ~ .promo-slider__list .item-slider:nth-child(3) {
+  display: block;
+}
+
+
+.promo-slider {
+  position: relative;
+}
+
+.promo-slider__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.promo-slider__item {
+  background-color: #eeeeee;
+}
+
+.promo-slider__item--slide1 {
+  background-image: url("../img/slide1.png");
+}
+
+.promo-slider__item--slide2 {
+  background-image: url("../img/slide2.png");
+}
+
+.promo-slider__item--slide3 {
+  background-image: url("../img/slide3.png");
+}
+
+
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 107px;
+  z-index: 100;
+  width: 160px;
+  height: 18px;
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.slider-controls label {
+  position: relative;
+  display: inline-block;
+  /* width: 18px;
+  height: 18px; */
+  padding: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+}
 
 
 .info-slider__list {
@@ -274,37 +402,7 @@ label {
   
 }
 
-/* .info-slider__item {
-  display: none;
-  padding-top: 65px;
-  padding-bottom: 80px;
 
-  background-repeat: no-repeat;
-  background-position: 500px 0;
-} */
-
-/* .info-slider__item.active {
-  display: block;
-} */
-
-/* .info-slider__item--design {
-  padding-top: 50px;
-  padding-right: 780px;
-
-  background-image: url("../img/slide1.png");
-  background-position: 433px 0;
-} */
-
-/* .info-slider__item--proportions {
-  padding-right: 600px;
-  background-image: url("../img/slide2.png");
-} */
-
-/* .info-slider__item--night-hardcore {
-  padding-right: 700px;
-  background-image: url("../img/slide3.png");
-  background-position: 400px 5px;
-} */
  
 .services {
   padding-top: 10px;
@@ -564,7 +662,7 @@ label {
     width: 300px;
     height: 190px;
     top: 90px;
-    right: 370px;
+    right: 340px;
   }
 
   .cont-relative {
@@ -655,22 +753,19 @@ label {
 }
 /* =====================пусть будет последним определяемым стилем, уж скрывать так скрывать*/
 .visually-hidden {
-    position: absolute;
+   display: none;
+    /* position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
     overflow: hidden;
-    border: 0;
+    border: 0; */
   }
 
 
 /* стили  не использованные
 
-
-.slider{}
-
-.slide-btn
 
 .service-text{}
 .btn service-sites

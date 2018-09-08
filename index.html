@@ -80,7 +80,7 @@
         <a class="button services__link button--green" href="#">Заказать</a>
       </li>
       <li class="services__item services__title--presentation">
-        <h2 class="services__title">Презентация</h2>
+        <h2 class="services__title">Презентации</h2>
         <p class="services__text">Вы даже не подозреваете,<br> на сколько вы изумительный!</p>
         <a class="button  services__link button--yellow" href="#">Заказать</a>
       </li>
@@ -88,33 +88,31 @@
   </section>
 
 <!---------------------------------------- Services block 2 -->
-  <div class="info-container">
-    <!-- Info block -->
-   <div class="info-flex">
-     <div class="we-are">
-      <p class="info-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-      <p class="info-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-         превыше креатива. Работаем не покладая рук, как роботы.</p>
-      <p class="list-title">Выполняем заказы на разработку:</p>
-      <ul class="list">
-        <li>Веб-сайтов любой сложности</li>
-        <li>Мобильных приложений для iOS и Android</li>
-        <li>Слайдшоу и видео для корпоративных презентаций</li>
+ <section class="about-us wrapper">
+    <div class="brief-info">
+      <h2 class="brief-info__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+      <p class="brief-info__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+      <h3 class="brief-info__header">Выполняем заказы на разработку:</h3>
+      <ul class="brief-info__list">
+      <li class="brief-info__item">Веб-сайтов любой сложности</li>
+      <li class="brief-info__item">Мобильных приложений для iOS и Android</li>
+      <li class="brief-info__item">Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
     </div>
-    <div class="nerds-146">
-      <a class="header-logo2" href="index.html">
-        <img src="img/nerds-illustration.jpg" alt="Nёrds">
-      </a>
-      <p class="list-title">С 2004 года любим точность во всём:</p>
-      <ul class="list-146">
-        <li>146% Уровень самоотдачи</li>
-        <li>100% Соблюдение сроков</li>
-        <li>50% Минимальная предоплата</li>
-      </ul>
+    <div class="features">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип веб-студии Нёрдс">
+      <p class="features__heading">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
+      <dl class="features__list">
+        <div class="feat-flex"><dt class="features__term">Уровень самоотдачи</dt>
+        <dd class="features__determination">146<span>%</span></dd></div>
+        <div class="feat-flex"><dt class="features__term">Соблюдение сроков</dt>
+        <dd class="features__determination">100<span>%</span></dd></div>
+        <div class="feat-flex"><dt class="features__term">Миниальная предоплата</dt>
+        <dd class="features__determination">50<span>%</span></dd></div>
+      </dl>
     </div>
-   </div> 
-  </div>  
+  </section>
     
     <!--------------------------------- References block -->
 
@@ -122,7 +120,7 @@
       <ul class="reference-list">  
         <li class="reference-img">
          <a href="http://htmlacademy.ru/" >
-          <img src="img/logo-1.png" alt="HTML Academy">
+          <img src="img/logo-1.png" width="199" height="68" alt="HTML Academy">
          </a>
         </li>
         <li class="reference-img">
@@ -163,13 +161,13 @@
   <footer class="footer-container wrapper">
     <ul class="footer-social">
       <li class="social__link icon-vk">
-        <a href="https://vk.com/" aria-label="Вконтакте">Vk</a>
+        <a href="https://vk.com/" aria-label="Вконтакте"></a>
       </li>
       <li class="social__link icon-facebook">
-        <a  href="https://www.facebook.com/" aria-label="Фейсбук">Fb</a>
+        <a  href="https://www.facebook.com/" aria-label="Фейсбук"></a>
       </li>
       <li class="social__link icon-instagram">
-        <a href="https://instagram.com/" aria-label="Инстаграм">Inst</a>
+        <a href="https://instagram.com/" aria-label="Инстаграм"></a>
       </li>
     </ul>
     <div class="footer-friendship">
@@ -178,22 +176,73 @@
     </div>
   </footer>
   
-  <!-- form -->
-   <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="post">
-    <h1 >Напишите нам</h1>  
-    <div class="letter-form">
-      <label for="name-field">Ваше имя:</label>
-      <input type="text" name="name" id="name-field" value="Имя Фамилия">
-      <label for="email-field">Ваш e-mail:</label>
-      <input type="text" name="email" id="email-field" value="email@example.com">
-      <br>
-      <br>
-      <label for="text-field">Текст письма</label>
-      <input type="text" name="text" id="text-field" value="В свободной форме">
-      <br>
-      <button type="submit" class="btn contacts-btn">Отправить</button>
+  <!----------------------------------- form -->
+  
+  <section class="feedback wrapper">
+    <h2 class="feedback__title">Напишите нам</h2>
+    <form class="input-form" action="http://echo.htmlacademy.ru" method="get">
+    <div class="input-form__flex">
+      <p class="input-form__name">
+        <label for="user-name">Ваше имя:</label>
+        <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+      </p>
+      <p class="input-form__email">
+        <label for="email">Ваш e-mail:</label>
+        <input type="text" id="email" name="emeil" placeholder="email@example.com">
+      </p>
     </div>
-  </form>
+      <p class="input-form__review">
+        <label for="review">Текст письма:</label>
+        <textarea id="review" rows="5" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button input-form__button" type="submit">Отправить</button>
+    </form>
+    <button class="feedback-close" type="button">Закрыть</button>
+  </section>
+
+  <script>
+    var link = document.querySelector(".contacts-btn");
+    var popup = document.querySelector(".feedback");
+    var close = document.querySelector(".feedback-close")
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("feedback-show");
+    });
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("feedback-show");
+    });
+  </script>
+
+<!-- 
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript">
+       ymaps.ready(function () {
+       var myMap = new ymaps.Map('map', {
+           center: [59.939135, 30.321534],
+           zoom: 17
+        },{
+           searchControlProvider: 'yandex#search'
+        }),
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+           '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+        myPlacemarkWithContent = new ymaps.Placemark([59.938690, 30.323200], {
+           hintContent: 'NЁRDS DESIGN STUDIO',
+           balloonContent: '191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8',
+           iconContent: '15'
+        }, {
+           iconLayout: 'default#imageWithContent',
+           iconImageHref: 'img/map-marker.png',
+           iconImageSize: [231, 190],
+           iconImageOffset: [-54, -200],
+           iconContentOffset: [15, 15],
+           iconContentLayout: MyIconContentLayout
+        });
+        myMap.geoObjects
+          .add(myPlacemarkWithContent);
+        });
+  </script> -->
 
 </body>
 

@@ -114,8 +114,15 @@ label {
     text-transform: uppercase;
   }
   .btn{
+    color: #ffffff;
+    background-color: #fb565a;
     text-transform: uppercase;
+    border: none;
+    text-align: center;
+    border-radius: 3px;
+    outline: none;
   }
+
   .slide-title,
   .shop-title{
     font-size: 50px;
@@ -360,22 +367,79 @@ label {
   align-items: center;
   }
 
+  .contacts {
+    max-width: 1440px;
+    height: 416px;
+    background-image: url("../img/map.png");
+    background-repeat: no-repeat;
+    background-position: 0 -10px ;
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+  }
+  .contacts::before {
+    content: "";
+    background: url("../img/map-marker.png");
+    position: absolute;
+    width: 300px;
+    height: 190px;
+    top: 90px;
+    right: 370px;
+  }
+
+  .cont-relative {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+.contacts-title {
+   width: 220px;
+   margin: 0;
+   margin-top: 10px;
+   font-size: 18px;
+   line-height: 30px;
+   font-weight: bold;
+}
+
+.contacts-text {
+  width: 210px;
+  margin-top: 23px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+.contacts-btn {
+  width: 220px;
+  margin-top: 23px;
+  margin-bottom: 6px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.contacts__link:focus {
+  background-color: #e74246;
+}
+
+
+.contacts-text:last-of-type {
+  margin-top: 0px;
+}
+
 .contacts-container{
+  position: absolute;
+  width: 320px;
+  padding: 40px 50px;
+  top: 54px;
+  left: 20px;
+  background: white;
+  background-position: left center;
+  z-index: 1;
   display: flex;
-  margin-left:140px;
-  width:320px;
-  height: 308px;
-  padding: 50px;
   flex-direction: column;
-  justify-content: space-between
+  flex-wrap: wrap;
 }
 
 
-.footer-container{
-  display:flex;
-  padding-top: 66px;
-  padding-bottom: 70px;
-}
 .footer-social{
   width:260px;
   margin:0;
@@ -404,6 +468,11 @@ label {
     margin-top: 6px;
 }
 
+.footer-container{
+  display:flex;
+  padding-top: 66px;
+  padding-bottom: 70px;
+}
 /* =====================пусть будет последним определяемым стилем, уж скрывать так скрывать*/
 .visually-hidden {
     position: absolute;
@@ -432,10 +501,7 @@ label {
 .list{}
 .header-logo2{}
 .reference-img{}
-.contacts-title{}
-.contacts-address{}
-.contacts-phone{}
-.btn contacts-btn{}
+
 
 icon-vk
 icon-faceboo

@@ -1098,6 +1098,16 @@ next
 
 }
 
+.catalog {
+  width: 760px;
+  margin-left: auto;
+}
+
+.filter {
+  width: 260px;
+}
+
+
 .catalog__list {
   display: flex;
   flex-wrap: wrap;

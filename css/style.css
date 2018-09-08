@@ -251,11 +251,12 @@ label {
   justify-content: space-between;
 }
 
-.container{
+/* .container{
   width: 500px;
   margin: 0 auto;
   padding: 0 10px;  
-}
+} */
+
 /* .header-logo {
   width: 440px;
   height: 65px; */
@@ -349,30 +350,92 @@ label {
 } 
 
 .reference-container{
-  width: 1100px;
-  margin-left: 140px;
-  margin-top: 80px;
-  margin-bottom:80px;
-  padding: 0;   
-  align-items: center;
+  list-style: none;
+  position: relative;
+  margin-bottom: 65px;
   }
 
-  /* .reference-container li{
-    width: 300px;
-  }     */
+  .reference-container li{
+    width: 260px;
+  }    
 
   .reference-list{
-  display: flex;
-  justify-content:  space-around;
-  align-items: center;
+    width: 1160px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 80px;
+    text-align: center;
+    list-style: none;
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
   }
+  .reference-img{
+    opacity: 0.5;
+  }
+
+  .reference-img:focus {
+    opacity: 0.5;
+  }
+  .reference-img:hover {
+    opacity: 1;
+  }
+  
+  .reference-img:active {
+    opacity: 0.2;
+  }
+  
+  .collab__item:first-of-type {
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  
+  
+  /* .reference-img:first-of-type::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: -51px;
+    width: 2px;
+    height: 55px;
+    background: #eeeeee;
+  } */
+  
+  /* .reference-img:nth-of-type(2)::after {
+    content: "";
+    position: absolute;
+    top: 60px;
+    right: -40px;
+    width: 2px;
+    height: 55px;
+    background: #eeeeee;
+  } */
+/*   
+  .reference-img:nth-of-type(3)::after {
+    content: "";
+    position: absolute;
+    top: 45px;
+    right: -57px;
+    width: 2px;
+    height: 55px;
+    background: #eeeeee;
+  }
+   */
+
+
+
 
   .contacts {
     max-width: 1440px;
     height: 416px;
     background-image: url("../img/map.png");
     background-repeat: no-repeat;
-    background-position: 0 -10px ;
+    /* background-position: 0 -10px ; */
     margin: 0 auto;
     position: relative;
     z-index: 100;
@@ -427,7 +490,7 @@ label {
 
 .contacts-container{
   position: absolute;
-  width: 320px;
+  width: 220px;
   padding: 40px 50px;
   top: 54px;
   left: 20px;
@@ -500,8 +563,6 @@ label {
 
 .list{}
 .header-logo2{}
-.reference-img{}
-
 
 icon-vk
 icon-faceboo

@@ -1107,6 +1107,27 @@ next
   width: 260px;
 }
 
+.filter-button {
+  margin-top: 30px;
+  padding: 16px 89px;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 3px;
+  background-color: #eeeeee;
+  color: #000000;
+  font-weight: bold;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  background-color: #d5d5d5;
+  color: #959595;
+  box-shadow: inset 0 3px 0 0 #bfbfbf;
+}
 
 .catalog__list {
   display: flex;
@@ -1115,6 +1136,44 @@ next
   padding: 0;
   margin-top: 10px;
   list-style: none;
+}
+
+.catalog__title {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.catalog-sorting {
+  padding: 0;
+  margin-top: 0;
+  margin-right: 50px;
+  width: 280px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: auto;
+  list-style: none;
+}
+.catalog-sorting__item a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #b2b2b2;
+  outline: none;
+}
+
+.catalog-sorting__item a:hover,
+.catalog-sorting__item a:focus {
+  color: #666666;
+}
+.catalog-sorting__item a:active {
+  color: #000000;
+}
+
+.catalog-sorting__item--active a  {
+  color: #000000;
 }
 
 .catalog-hover {
@@ -1128,6 +1187,52 @@ li.catalog__item:hover .catalog-hover {
 .catalog-hover:focus {
   opacity: 1;
 }
+
+
+.catalog-extra {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  position: relative;
+  height: 20px;
+}
+
+.catalog-extra_down {
+  position: relative;
+}
+
+.catalog-extra__down a::after {
+  content: "";
+  width: 11px;
+  height: 10px;
+  position: absolute;
+  top: 3px;
+  right: 30px;
+  background: url("../img/svg/icon-up-dir.svg");
+  transform: rotate(180deg);
+}
+
+.catalog-extra__up a::after {
+  content: "";
+  width: 11px;
+  height: 10px;
+  position: absolute;
+  top: 3px;
+  right: 2px;
+  background: url("../img/svg/icon-up-dir.svg");
+  opacity: 0.2;
+}
+
+.catalog-extra__down a:hover::after,
+.catalog-extra__up a:hover::after {
+  opacity: 0.5;
+}
+
+.catalog-extra__up a:active::after {
+  opacity: 1;
+}
+
 
 .catalog-hover {
   position: absolute;

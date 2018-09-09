@@ -38,7 +38,7 @@
     <section class="filter">
 
 
-    <section class="sidebar">
+     <section class="sidebar">
       <p class="filter-title">Стоимость:</p>
 
       <div class="range-control">
@@ -87,26 +87,35 @@
           <input id="checkbox5" name="checkbox-5" type="checkbox">
           <label class="icon-check-off" for="checkbox5">Корзина</label>
         </p>
-      </form>
-    </section>
 
-    <p class="sorting-title">Сортировать:</p>
-    <ul class="sorting-list">
-      <li>
-        <a href="#" class="sorting-text">По цене</a>
-      </li>
-      <li>
-        <a href="#" class="sorting-text">По типу</a>
-      </li>
-      <li>
-        <a href="#" class="sorting-text">По функционалу</a>
-      </li>
-    </ul>
+        
+        <button class="button filter-button" type="submit">Показать</button>
+      </form>
+
+     </section>  <!--   class="sidebar" -->
     </section> <!-- class="filter" -->
 
 
+<section class="catalog">
+    <div class="flex">
+    <b class="catalog__title">Сортировать:</b>
+      <ul class="catalog-sorting">
+        <li class="catalog-sorting__item catalog-sorting__item--active"><a href="#">По цене</a></li>
+        <li class="catalog-sorting__item"><a href="#">По типу</a></li>
+        <li class="catalog-sorting__item"><a href="#">По названию</a></li>
+      </ul>
+      <ul class="catalog-extra">
+        <li class="catalog-extra__down" tabindex="0">
+          <a href="#"></a>
+        </li>
+        <li class="catalog-extra__up" tabindex="0">
+          <a href="#"></a>
+        </li>
+      </ul>
+    </div>
+
+
     <!--======================================================== Item cards -->
-    <section class="catalog">
     <ul class="catalog__list">
         <li class="catalog__item">
           <span class="catalog__circle"></span>

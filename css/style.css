@@ -859,7 +859,7 @@ label {
     margin: 0 auto;
     z-index: 100;
   }
-  .contacts::before {
+  /* .contacts::before {
     content: "";
     background: url("../img/map-marker.png");
     position: absolute;
@@ -867,8 +867,7 @@ label {
     height: 190px;
     top: 90px;
     right: 460px; 
-
-  }
+  } */
 
   .cont-relative {
     position: relative;
@@ -920,6 +919,16 @@ label {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+.contacts-container::after {
+  content: "";
+  background: url("../img/map-marker.png");
+  position: absolute;
+  width: 300px;
+  height: 190px;
+  top: 36px;
+  left: 544px; 
 }
 
 /* -----------------------------------------------------подвал============ */

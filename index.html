@@ -4,214 +4,202 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <div class="header-color">
+    <header class="main-header wrapper">
+      <nav class="main-navigation">
+        <a class="header-logo">
+          <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип Nёrds">
+        </a>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item"><a href="#">Студия</a></li>
+          <li class="main-navigation__item"><a href="#">Клиенты</a></li>
+          <li class="main-navigation__item"><a href="catalog.html">Магазин</a></li>
+          <li class="main-navigation__item"><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="main-navigation__extra-list">
+          <li class="main-navigation__extra-item">
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 
-  <!-- Header -->
-<!-- <div class="back-gray"> -->
-  <header class="cnt main-header">
-    <a class="header-logo" href="index.html">
-      <img src="img/nerds-logo.svg" alt="Nёrds">
-    </a>
-    <nav class="cnt container">
-      <ul class="menu">
-        <li>
-          <a href="index.html">Студия</a>
+  <main>
+    <div class="header-color">
+      <section class="promo-slider wrapper ">
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="slider-controls">
+          <label class="slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item--3" for="product-3">Третий</label>
+        </div>
+
+        <ul class="promo-slider__list">
+          <li class="promo-slider__item promo-slider__item--slide1 item-slider">
+            <b class="item-slider__title">Долго, дорого,<br>скрупулезно.</b>
+            <p class="item-slider__text">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+            <a class="button item-slider__link" href="#">Узнать больше</a>
+          </li>
+          <li class="promo-slider__item promo-slider__item--slide2 item-slider">
+            <b class="item-slider__title">Любим математику<br> как никто другой</b>
+            <p class="item-slider__text">Никакого креатива, только математические формулы<br> для расчета идеальных
+              пропорций.</p>
+            <a class="button item-slider__link" href="#">Узнать больше</a>
+          </li>
+          <li class="promo-slider__item promo-slider__item--slide3 item-slider">
+            <b class="item-slider__title">Только ночь,<br>только хардкор</b>
+            <p class="item-slider__text">Работать днем, как все? Мы против этого,<br> Ближе к полуночи работа только
+              начинается.</p>
+            <a class="button item-slider__link" href="#">Узнать больше</a>
+          </li>
+        </ul>
+
+      </section>
+    </div>
+    <section class="services wrapper">
+      <ul class="services__list">
+        <li class="services__item services__title--web">
+          <h2 class="services__title ">Веб-сайты</h2>
+          <p class="services__text">Мир никогда не будет прежним<br> после того как увидит ваш сайт!</p>
+          <a class="button services__link button--red" href="#">Заказать</a>
         </li>
-        <li>
-          <a href="#references">Клиенты</a>
+        <li class="services__item services__title--app">
+          <h2 class="services__title">Приложения</h2>
+          <p class="services__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="button services__link button--green" href="#">Заказать</a>
         </li>
-        <li>
-          <a href="catalog.html">Магазин</a>
-        </li>
-        <li>
-          <a href="#contacts">Контакты</a>
+        <li class="services__item services__title--presentation">
+          <h2 class="services__title">Презентации</h2>
+          <p class="services__text">Вы даже не подозреваете,<br> на сколько вы изумительный!</p>
+          <a class="button  services__link button--yellow" href="#">Заказать</a>
         </li>
       </ul>
-    </nav>
-    <a class="icon-basket" href="#">Корзина</a>
-  </header>
-<!-- </div> -->
-
-<!-------------------------------- Content -->
-<main>
-<div class="cnt back-gray">
-  <!--              slider                    -->
-  <section class="slider">
-     
-    <ul class="info-slider__list">
-
-      <!-- Slide 1 -->
-      <li class="info-slider__item info-slider__item--design active">
-        <p class="cnt">
-          <img src="img/nerds-index-slide1.png" alt="Дорого, долго, скурпулезно.">
-        </p>
-        <p class="slide-title">Долго, дорого, скрупулезно.</p>
-        <p class="slide-text">Математически выверенный дизайн
-          <br> для вашего сайта или мобильного приложения.</p>
-        <a href="#" class="btn slide-btn">Узнать больше</a>
-      </li>  
-      <!-- Slide 2 -->
-      <li class="visually-hidden info-slider__item info-slider__item--proportions">
-        <p>
-          <img src="img/nerds-index-slide2.png" alt="Любим математику как никто другой">
-        </p>
-        <p class="slide-title">Любим математику как никто другой</p>
-        <p class="slide-text">Никакого креатива, только математические формулы 
-          <br> для расчета идеальных пропорций.      
-        </p>
-        <a href="#" class="btn slide-btn">Узнать больше</a>
+    </section>
+    <section class="about-us wrapper">
+      <div class="brief-info">
+        <h2 class="brief-info__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+        <p class="brief-info__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше
+          креатива. Работаем не покладая рук, как роботы.</p>
+        <h3 class="brief-info__header">Выполняем заказы на разработку:</h3>
+        <ul class="brief-info__list">
+          <li class="brief-info__item">Веб-сайтов любой сложности</li>
+          <li class="brief-info__item">Мобильных приложений для iOS и Android</li>
+          <li class="brief-info__item">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </div>
+      <div class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип веб-студии Нёрдс">
+        <p class="features__heading">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
+        <dl class="features__list">
+          <div class="feat-flex"><dt class="features__term">Уровень самоотдачи</dt>
+            <dd class="features__determination">146<span>%</span></dd>
+          </div>
+          <div class="feat-flex"><dt class="features__term">Соблюдение сроков</dt>
+            <dd class="features__determination">100<span>%</span></dd>
+          </div>
+          <div class="feat-flex"><dt class="features__term">Миниальная предоплата</dt>
+            <dd class="features__determination">50<span>%</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <section class="reference-container wrapper">
+      <ul class="reference-list">
+        <li class="reference-img">
+          <a href="http://htmlacademy.ru/">
+            <img src="img/logo-1.png" width="199" height="68" alt="HTML Academy">
+          </a>
+        </li>
+        <li class="reference-img">
+          <a href="#">
+            <img src="img/logo-2.png" alt="Barbershop Borodinski">
+          </a>
+        </li>
+        <li class="reference-img">
+          <a href="#">
+            <img src="img/logo-3.png" alt="PINK">
+          </a>
+        </li>
+        <li class="reference-img">
+          <a href="#">
+            <img src="img/logo-4.png" alt="Mishka">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="contacts" id="map">
+      <div class="cont-relative">
+        <div class="contacts-container">
+          <h2 class="contacts-title">NЁRDS DESIGN STUDIO</h2>
+          <p class="contacts-text">191186, Санкт-Петербург,<br>ул. Б. Конюшенная,д.19/8</p>
+          <p class="contacts-text">тел. +7(812)275-75-75</p>
+          <a href="#" class="btn contacts-btn">Напишите нам</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer-container wrapper">
+    <ul class="footer-social">
+      <li class="social__link icon-vk">
+        <a href="https://vk.com/" aria-label="Вконтакте"></a>
       </li>
-      <!-- Slide 3 -->
-      <li class="visually-hidden info-slider__item info-slider__item--night-hardcore">
-        <p>
-          <img src="img/nerds-index-slide3.png" alt="Только ночь, только хардкор">
-        </p>
-        <p class="slide-title">Только ночь, только хардкор</p>
-        <p class="slide-text">Работать днем, как все? Мы против этого.
-          <br>Ближе к полуночи работа только начинается. 
-        </p>
-        <a href="#" class="btn slide-btn">Узнать больше</a>
+      <li class="social__link icon-facebook">
+        <a href="https://www.facebook.com/" aria-label="Фейсбук"></a>
+      </li>
+      <li class="social__link icon-instagram">
+        <a href="https://instagram.com/" aria-label="Инстаграм"></a>
       </li>
     </ul>
-  </section>
-</div>
-
-
-    <!-- Services block -->
-  <div class="cnt service-container">   
-    <ul class="service-list">
-      <li>
-        <p> <img src="img/illustration-1.jpg" alt="Сайты">
-        </p>
-        <h3 class="service-title">Веб-сайты</h3>
-        <p class="service-text">Мир никогда не будет прежним после того как увидит ваш сайт!
-        </p>
-        <p> <a href="#" class="btn service-sites">Заказать</a>
-        </p>
-      </li>
-      <li class="cnt">
-        <img src="img/illustration-2.jpg" alt="Приложения">
-        <h3 class="service-title">Приложения</h3>
-        <p class="service-text">Покорите топ-10 приложений в AppStrore и Google Play
-        </p>
-        <p>  <a href="#" class="btn service-apps">Заказать</a>
-        </p>
-      </li>
-      <li>
-        <img src="img/illustration-3.jpg" alt="Презентации">
-        <h3 class="service-title">Презентации</h3>
-        <p class="service-text">Вы даже не подозреваете, насколько вы изумительны!
-        </p>
-        <p>    <a href="#" class="btn service-presentations">Заказать</a>
-        </p>
-      </li>
-    </ul>  
-  </div>
-
-  <div class="info-container">
-    <!-- Info block -->
-   <div class="info-flex cnt">
-     <div class="we-are">
-      <p class="info-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-      <p class="info-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-         превыше креатива. Работаем не покладая рук, как роботы.</p>
-      <p class="list-title">Выполняем заказы на разработку:</p>
-      <ul class="list">
-        <li>Веб-сайтов любой сложности</li>
-        <li>Мобильных приложений для iOS и Android</li>
-        <li>Слайдшоу и видео для корпоративных презентаций</li>
-      </ul>
-    </div>
-    <div class="nerds-146">
-      <a class="header-logo2" href="index.html">
-        <img src="img/nerds-illustration.jpg" alt="Nёrds">
-      </a>
-      <p class="list-title">С 2004 года любим точность во всём:</p>
-      <ul class="list-146">
-        <li>146% Уровень самоотдачи</li>
-        <li>100% Соблюдение сроков</li>
-        <li>50% Минимальная предоплата</li>
-      </ul>
-    </div>
-   </div> 
-  </div>  
-    
-    <!-- References block -->
-  <div class="cnt reference-container">
-
-      <a name="references"></a>
-    <ul class="reference-list">  
-      <li>
-        <a href="http://htmlacademy.ru/" class="reference-img">
-         <img src="img/logo-1.png" alt="HTML Academy">
-        </a>
-      </li>
-      <li>
-        <a href="# " class="reference-img">
-          <img src="img/logo-2.png" alt="Barbershop Borodinski">
-        </a>
-      </li>
-      <li>
-        <a href="# " class="reference-img">
-          <img src="img/logo-3.png" alt="PINK">
-        </a>
-      </li>
-      <li>    
-        <a href="# " class="reference-img">
-          <img src="img/logo-4.png" alt="Mishka">
-        </a>
-      </li>
-     </ul>    
-  </div>
-
-  </main>
-
-  <!-- Map & contacts -->
-
-  <a name="contacts"><img src="img/map.png" alt="191186,Санкт-Петербург ул.Б. Конюшенная,д.19/8"></a>
-  <div class="cnt contacts-container">
-    <p class="contacts-title">Nёrds design studio</p>
-    <p class="contacts-address">191186,Санкт-Петербург,<br>
-     ул.Б. Конюшенная,д.19/8</p>
-    <p class="contacts-phone">тел.+7(812)275-75-75</p>
-    <a href="#" class="btn contacts-btn">Напишите нам</a>
-    <p></p>
-  </div>
-
-  <!-- Footer -->
-  <footer class="cnt footer-container">
-    <div class="footer-social">
-      <a class="icon-vk" href="https://vk.com/" target="_blank">Vk</a>
-      <a class="icon-facebook" href="https://www.facebook.com/" target="_blank">Fb</a>
-      <a class="icon-instagram" href="https://instagram.com/" target="_blank">Insta</a>
-    </div>
     <div class="footer-friendship">
-      <p class="friendship-title">Давайте дружить, это выгодно!</p>
+      <b class="friendship-title">Давайте дружить, это выгодно!</b>
       <p class="friendship-text">Скидка 10% для друзей из социальных сетей</p>
     </div>
   </footer>
-  
-  <!-- form -->
-   <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="post">
-    <h1 >Напишите нам</h1>  
-    <div class="letter-form">
-      <label for="name-field">Ваше имя:</label>
-      <input type="text" name="name" id="name-field" value="Имя Фамилия">
-      <label for="email-field">Ваш e-mail:</label>
-      <input type="text" name="email" id="email-field" value="email@example.com">
-      <br>
-      <br>
-      <label for="text-field">Текст письма</label>
-      <input type="text" name="text" id="text-field" value="В свободной форме">
-      <br>
-      <button type="submit" class="btn contacts-btn">Отправить</button>
-    </div>
-  </form>
+  <section class="feedback wrapper">
+    <h2 class="feedback__title">Напишите нам</h2>
+    <form class="input-form" action="http://echo.htmlacademy.ru" method="get">
+      <div class="input-form__flex">
+        <p class="input-form__name">
+          <label for="user-name">Ваше имя:</label>
+          <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+        </p>
+        <p class="input-form__email">
+          <label for="email">Ваш e-mail:</label>
+          <input type="text" id="email" name="emeil" placeholder="email@example.com">
+        </p>
+      </div>
+      <p class="input-form__review">
+        <label for="review">Текст письма:</label>
+        <textarea id="review" rows="5" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button input-form__button" type="submit">Отправить</button>
+    </form>
+    <button class="feedback-close" type="button">Закрыть</button>
+  </section>
 
+  <script>
+    var link = document.querySelector(".contacts-btn");
+    var popup = document.querySelector(".feedback");
+    var close = document.querySelector(".feedback-close")
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("feedback-show");
+    });
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("feedback-show");
+    });
+  </script>
 </body>
 
 </html>

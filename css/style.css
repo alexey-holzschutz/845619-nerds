@@ -213,6 +213,7 @@ letter-form input:invalid {
 .item-slider__title {
   font-size: 55px;
   line-height: 55px;
+  letter-spacing: 0.2px;
 }
 .item-slider__text {
   margin-top: 27px;

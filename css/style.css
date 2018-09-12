@@ -253,6 +253,7 @@ letter-form input:invalid {
   min-height: 24px;
   padding-top: 13px;
   padding-bottom: 13px;
+  vertical-align: top;
 }
 
 .item-slider__link:hover,
@@ -307,15 +308,15 @@ letter-form input:invalid {
 }
 
 .promo-slider__item--slide1 {
-  background-image: url("../img/slide1.png");
+  background-image: #eeeeee url("../img/slide1.png");
 }
 
 .promo-slider__item--slide2 {
-  background-image: url("../img/slide2.png");
+  background-image: #eeeeee url("../img/slide2.png");
 }
 
 .promo-slider__item--slide3 {
-  background-image: url("../img/slide3.png");
+  background-image: #eeeeee url("../img/slide3.png");
 }
 
 .slider-controls {
@@ -336,6 +337,7 @@ letter-form input:invalid {
   padding: 18px;
   border-radius: 50%;
   cursor: pointer;
+  vertical-align: top;
 }
 
 .slider-controls label::after {
@@ -419,6 +421,7 @@ letter-form input:invalid {
   width: 160px;
   padding-top: 15px;
   padding-bottom: 11px;
+  vertical-align: top;
 }
 
 .button {
@@ -515,8 +518,8 @@ letter-form input:invalid {
   font-size: 45px;
   line-height: 45px;
   margin-bottom: 35px;
-  letter-spacing: 0.3px;
-  margin-top: 40px;
+  letter-spacing: 0.1px;
+  margin-top: 38px;
 }
 
 .brief-info__header {
@@ -833,6 +836,7 @@ letter-form input:invalid {
 .contacts {
   max-width: 1440px;
   height: 416px;
+  background-color: white;
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-position: 50%;
@@ -925,7 +929,7 @@ letter-form input:invalid {
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.2px;
 }
 
 .friendship-text {
@@ -1022,7 +1026,7 @@ letter-form input:invalid {
   height: 15px;
   position: absolute;
   background: url("../img/svg/cart-icon.svg");
-  top: 5px;
+  top: 7px;
   right: 100px;
   opacity: 0.3;
   cursor: pointer;
@@ -1033,7 +1037,7 @@ letter-form input:invalid {
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
 .catalog {
@@ -1068,7 +1072,7 @@ input[type="range"] {
 }
 
 .filter__box:nth-child(2) {
-  margin-top: 52px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
 }
@@ -1369,7 +1373,7 @@ li.catalog__item:hover .catalog-hover {
   position: absolute;
   top: 3px;
   right: 30px;
-  background: url("../img/svg/icon-up-dir.svg");
+  background: white url("../img/svg/icon-up-dir.svg");
   transform: rotate(180deg);
 }
 
@@ -1380,7 +1384,7 @@ li.catalog__item:hover .catalog-hover {
   position: absolute;
   top: 3px;
   right: 2px;
-  background: url("../img/svg/icon-up-dir.svg");
+  background: white url("../img/svg/icon-up-dir.svg");
   opacity: 0.2;
 }
 

@@ -1,3 +1,30 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v18-cyrillic_latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-v18-cyrillic_latin-regular.woff") format("woff");
+}
+/* roboto-500 - cyrillic_latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("../fonts/roboto-v18-cyrillic_latin-500.woff2") format("woff2"),
+    url("../fonts/roboto-v18-cyrillic_latin-500.woff") format("woff");
+}
+/* roboto-700 - cyrillic_latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../fonts/roboto-v18-cyrillic_latin-700.woff2") format("woff2"),
+    url("../fonts/roboto-v18-cyrillic_latin-700.woff") format("woff");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -983,7 +1010,7 @@ letter-form input:invalid {
 }
 .main-navigation__extra-item {
   max-width: 160px;
-  margin-top:2px;
+  margin-top: 2px;
 }
 
 .main-navigation__extra-list {
@@ -1149,10 +1176,6 @@ input[type="range"] {
 .filter__option {
   list-style: none;
   margin-top: 0px;
-}
-
-.filter__option-checkbox:nth-of-child(3) {
-  margin-top: 19px;
 }
 
 .filter-input-radio + label {

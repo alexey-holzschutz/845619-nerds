@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -34,6 +33,7 @@
   <main>
     <div class="header-color">
       <section class="promo-slider wrapper ">
+        <h2 class="visually-hidden">Слайды преимуществ</h2>
         <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
         <input class="visually-hidden" type="radio" id="product-2" name="toggle">
         <input class="visually-hidden" type="radio" id="product-3" name="toggle">
@@ -114,6 +114,7 @@
       </div>
     </section>
     <section class="reference-container wrapper">
+      <h2 class="visually-hidden">Reference</h2>
       <ul class="reference-list">
         <li class="reference-img">
           <a href="http://htmlacademy.ru/">
@@ -187,19 +188,7 @@
     <button class="feedback-close" type="button">Закрыть</button>
   </section>
 
-  <script>
-    var link = document.querySelector(".contacts-btn");
-    var popup = document.querySelector(".feedback");
-    var close = document.querySelector(".feedback-close")
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("feedback-show");
-    });
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("feedback-show");
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

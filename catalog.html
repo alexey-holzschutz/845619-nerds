@@ -34,7 +34,7 @@
   <main>
     <div class="flex wrapper">
       <section class="filter">
-
+        <h2 class="visually-hidden">Фильтр</h2>
         <form action="#" method="post">
           <fieldset class="filter__box">
             <legend class="filter__title">Стоимость:</legend>
@@ -56,18 +56,20 @@
             <legend class="filter__title">Сетка:</legend>
             <ul class="filter__option">
               <li class="filter__option-radio">
-                <input class="visually-hidden filter-input filter-input-radio" id="adaptive" type="radio" name="radio-test"
-                  checked>
+                <input class="visually-hidden filter-input filter-input-radio" id="adaptive" type="radio" name="layout-grid"
+                  value="adaptive" checked>
                 <label for="adaptive" tabindex="0">Адаптивная</label>
               </li>
 
               <li class="filter__option-radio">
-                <input class="visually-hidden filter-input filter-input-radio" id="fix" type="radio" name="radio-test">
+                <input class="visually-hidden filter-input filter-input-radio" id="fix" type="radio" name="layout-grid"
+                  value="fix">
                 <label for="fix" tabindex="0">Фиксированная</label>
               </li>
 
               <li class="filter__option-radio">
-                <input class="visually-hidden filter-input filter-input-radio" id="rubber" type="radio" name="radio-test">
+                <input class="visually-hidden filter-input filter-input-radio" id="rubber" type="radio" name="layout-grid"
+                  value="rubber">
                 <label for="rubber" tabindex="0">Резиновая</label>
               </li>
             </ul>
@@ -76,29 +78,32 @@
             <legend class="filter__title">Особенности:</legend>
             <ul class="filter__option">
               <li class="filter__option-checkbox">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="slider" name="checkbox-test"
-                  checked>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="slider" name="properties"
+                  value="slider" checked>
                 <label for="slider" tabindex="0">Слайдер</label>
               </li>
 
               <li class="filter__option-checkbox">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="advantages" name="checkbox-test">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="advantages" name="properties"
+                  value="advantages">
                 <label for="advantages" tabindex="0">Блок преимуществ</label>
               </li>
 
               <li class="filter__option-checkbox">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="news" name="checkbox-test"
-                  checked>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="news" name="properties"
+                  value="news" checked>
                 <label for="news" tabindex="0">Новости</label>
               </li>
 
               <li class="filter__option-checkbox">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="gallery" name="checkbox-test">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="gallery" name="properties"
+                  value="gallery">
                 <label for="gallery" tabindex="0">Галерея</label>
               </li>
 
               <li class="filter__option-checkbox">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="basket" name="checkbox-test">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="basket" name="properties"
+                  value="basket">
                 <label for="basket" tabindex="0">Корзина</label>
               </li>
             </ul>
@@ -108,6 +113,7 @@
 
       </section>
       <section class="catalog">
+        <h2 class="visually-hidden">Сортировка</h2>
         <div class="flex">
           <b class="catalog__title">Сортировать:</b>
           <ul class="catalog-sorting">
@@ -240,21 +246,7 @@
     <button class="feedback-close" type="button">Закрыть</button>
   </section>
 
-  <script>
-    var link = document.querySelector(".contacts-btn");
-    var popup = document.querySelector(".feedback");
-    var close = document.querySelector(".feedback-close")
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("feedback-show");
-    });
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("feedback-show");
-    });
-  </script>
-
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -125,8 +125,6 @@ label {
 
 .btn {
   font: inherit;
-  background-color: red;
-  color: white;
 }
 .letter-form input {
   border: 2px solid lightgray;
@@ -569,7 +567,7 @@ label {
   font-size: 45px;
   line-height: 45px;
   margin-bottom: 35px;
-  letter-spacing: 0.1px;
+  letter-spacing: -0.5px;
   margin-top: 38px;
 }
 
@@ -935,7 +933,6 @@ label {
 }
 
 .contacts {
-  max-width: 1440px;
   height: 416px;
   background-color: white;
   background-image: url("../img/map.png");
@@ -997,13 +994,14 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  box-sizing: content-box;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
+  }
 
 .contacts-container::after {
   content: "";

@@ -53,28 +53,6 @@ a {
   text-decoration: none;
 }
 
-label {
-  display: block;
-}
-
-.cnt {
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 1px dotted #666666;
-}
-
-.flexcnt {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-}
-
 .menu,
 .menu a,
 .list-title {
@@ -139,16 +117,6 @@ label {
 
 .letter-form input:invalid {
   border: 2px solid red;
-}
-
-.back-gray {
-  background-color: lightgrey;
-  width: 1440px;
-  margin: 0 auto;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 *,

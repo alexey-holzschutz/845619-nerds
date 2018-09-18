@@ -761,9 +761,9 @@ a {
 }
 
 .feedback {
-  padding: 75px;
+  padding: 100px;
   position: fixed;
-  width: 831px;
+  width: 760;
   background: white;
   left: 50%;
   top: 50%;
@@ -796,8 +796,8 @@ a {
   line-height: 18px;
   border: 2px solid black;
   border-radius: 3px;
-  width: 343px;
-  height: 48px;
+  width: 341px;
+  height: 44px;
   padding-left: 15px;
 
   opacity: 0.2;
@@ -822,8 +822,8 @@ a {
   line-height: 18px;
   border: 2px solid black;
   border-radius: 3px;
-  width: 810px;
-  height: 103px;
+  width: 739px;
+  height: 97px;
   resize: none;
   padding-top: 15px;
   padding-left: 15px;

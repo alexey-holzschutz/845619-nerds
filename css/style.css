@@ -902,8 +902,8 @@ a {
 
 .contacts {
   height: 416px;
-  background-color: white;
-  background-image: url("../img/map.png");
+  background-color: rgb(241, 239, 232);
+  background-image: url("../img/mapmark.png");
   background-repeat: no-repeat;
   background-position: 50%;
   position: relative;
@@ -970,16 +970,6 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   }
-
-.contacts-container::after {
-  content: "";
-  background: url("../img/map-marker.png");
-  position: absolute;
-  width: 300px;
-  height: 190px;
-  top: 36px;
-  left: 544px;
-}
 
 .footer-social {
   width: 260px;
@@ -1688,6 +1678,13 @@ li.catalog__item:hover .catalog-hover {
   display: flex;
   padding-top: 15px;
 }
+
+.frame-maps {
+  width: 100%;
+  height: 416px;
+  border: 0;
+}
+
 
 .visually-hidden {
   position: absolute;

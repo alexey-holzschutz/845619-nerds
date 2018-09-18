@@ -1685,6 +1685,10 @@ li.catalog__item:hover .catalog-hover {
   border: 0;
 }
 
+.down-line-red {
+  padding-bottom: 9px;
+  border-bottom: 2px solid rgb(251, 86, 90);
+}
 
 .visually-hidden {
   position: absolute;
